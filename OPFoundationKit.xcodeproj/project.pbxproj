@@ -21,6 +21,7 @@
 		A7F05BD614BA0633005CF16F /* OPOrderedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05BD414BA0633005CF16F /* OPOrderedMutableDictionary.m */; };
 		A7F05BD814BA0995005CF16F /* OPFoundationKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A7F05BD714BA0995005CF16F /* OPFoundationKit.podspec */; };
 		A7F05BD914BA0995005CF16F /* OPFoundationKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A7F05BD714BA0995005CF16F /* OPFoundationKit.podspec */; };
+		A7F05BDC14BA0B6D005CF16F /* OPOrderedMutableDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05BDB14BA0B6D005CF16F /* OPOrderedMutableDictionaryTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		A7F05BD314BA0633005CF16F /* OPOrderedMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPOrderedMutableDictionary.h; sourceTree = "<group>"; };
 		A7F05BD414BA0633005CF16F /* OPOrderedMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPOrderedMutableDictionary.m; sourceTree = "<group>"; };
 		A7F05BD714BA0995005CF16F /* OPFoundationKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; indentWidth = 2; path = OPFoundationKit.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7F05BDB14BA0B6D005CF16F /* OPOrderedMutableDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPOrderedMutableDictionaryTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A7F05BBF14BA05EE005CF16F /* Supporting Files */,
+				A7F05BDB14BA0B6D005CF16F /* OPOrderedMutableDictionaryTest.m */,
 			);
 			path = OPFoundationKitTests;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				A7F05BC514BA05EE005CF16F /* main.m in Sources */,
 				A7F05BD614BA0633005CF16F /* OPOrderedMutableDictionary.m in Sources */,
+				A7F05BDC14BA0B6D005CF16F /* OPOrderedMutableDictionaryTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +337,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OPFoundationKitTests/OPFoundationKitTests-Prefix.pch";
 				INFOPLIST_FILE = "OPFoundationKitTests/OPFoundationKitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -349,6 +357,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OPFoundationKitTests/OPFoundationKitTests-Prefix.pch";
 				INFOPLIST_FILE = "OPFoundationKitTests/OPFoundationKitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
