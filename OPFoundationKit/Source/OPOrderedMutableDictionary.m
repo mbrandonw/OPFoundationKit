@@ -36,7 +36,7 @@ NSString *DescriptionForObject(NSObject *object, id locale, NSUInteger indent);
 -(void) setObject:(id)anObject forKey:(id)aKey {
     
 	if (![dictionary objectForKey:aKey])
-		[array addObject:aKey];
+		[array addObject:[aKey copy]];
     
 	[dictionary setObject:anObject forKey:aKey];
 }
@@ -68,7 +68,7 @@ NSString *DescriptionForObject(NSObject *object, id locale, NSUInteger indent);
 	if (![dictionary objectForKey:aKey])
 		[self removeObjectForKey:aKey];
     
-	[array insertObject:aKey atIndex:anIndex];
+	[array insertObject:[aKey copy] atIndex:anIndex];
 	[dictionary setObject:anObject forKey:aKey];
 }
 
