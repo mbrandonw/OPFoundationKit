@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
   s.license  = 'MIT'
   
   s.summary       = 'OPFoundationKit'
-  s.homepage      = 'https://brandonwilliams.beanstalkapp.com/opfoundationkit'
+  s.homepage      = 'https://github.com/mbrandonw/OPFoundationKit'
   s.author        = { 'Brandon Williams' => 'brandon@opetopic.com' }
-  s.source        = { :git => 'git@brandonwilliams.beanstalkapp.com:/opfoundationkit.git' }
+  s.source        = { :git => 'git@github.com:mbrandonw/OPFoundationKit.git' }
   s.requires_arc  = true
   
-  s.source_files = 'Source/**/*.{h,m}'
+  s.source_files = 'OPFoundationKit/Source/**/*.{h,m}'
   
 end
