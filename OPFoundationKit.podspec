@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source        = { :git => 'git@github.com:mbrandonw/OPFoundationKit.git' }
   s.requires_arc  = true
   
-  s.source_files = 'OPFoundationKit/Source/**/*.{h,m}'
+  s.source_files = 'src/**/*.{h,m}'
   
 end
